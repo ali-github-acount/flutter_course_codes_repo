@@ -12,7 +12,7 @@ extension on String {
         .map((e) => e.replaceAll('.', '').replaceAll(',', ''))
         .toList();
     var hightledFound = splittedPara.map((e) {
-      if (e == 'evening') return "(${e.toUpperCase()})";
+      if (e == query) return "(${e.toUpperCase()})";
       return e;
     }).toList();
     return hightledFound.toString();
